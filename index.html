@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="manifest" href="manifest.json">
+    <title>My Poetry Book</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .book-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .poem {
+            margin-bottom: 20px;
+            page-break-after: always;
+        }
+        button#chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>  
+</head>
+<body>
+    <div class="book-container">
+        <h1>My Poetry Collection</h1>
+        <div class="poem">
+            <h2>Poem 1</h2>
+            <p>This is where your poem text will go...</p>
+        </div>
+        <div class="poem">
+            <h2>Poem 2</h2>
+            <p>This is where your poem text will go...</p>
+        </div>
+        <!-- Add more poems here -->
+    </div>
+
+    <button id="chat">Here</button>
+
+    <script>
+        // Script for opening chat
+        document.getElementById('chat').onclick = function() {
+            window.location.href = 'chat.html'; // Placeholder for chat system
+        };
+    </script>
+</body>
+</html>
